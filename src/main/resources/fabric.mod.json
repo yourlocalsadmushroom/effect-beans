@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "mushroomstuff",
+	"version": "${version}",
+	"name": "Mushroom Stuff",
+	"description": "Made by ASadMushroom | Mod for funny lil mushrooms",
+	"authors": [
+		"ASadMushroom"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/mushroom-stuff/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.sadmush.mushroomstuff.MushroomStuff"
+		],
+		"client": [
+			"net.sadmush.mushroomstuff.MushroomStuffClient"
+		],
+		"fabric-datagen": [
+			"net.sadmush.mushroomstuff.MushroomStuffDataGenerator"
+		]
+	},
+	"mixins": [
+		"mushroom-stuff.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
