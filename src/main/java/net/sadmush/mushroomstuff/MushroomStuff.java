@@ -2,6 +2,7 @@ package net.sadmush.mushroomstuff;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.sadmush.mushroomstuff.block.ModBlocks;
 import net.sadmush.mushroomstuff.item.ModItemGroups;
 import net.sadmush.mushroomstuff.item.ModItems;
 import org.slf4j.Logger;
@@ -16,5 +17,6 @@ public class MushroomStuff implements ModInitializer {
 		LOGGER.info("MushroomStuff initialized | Hope you enjoy the funny mushroom blocks!");
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }

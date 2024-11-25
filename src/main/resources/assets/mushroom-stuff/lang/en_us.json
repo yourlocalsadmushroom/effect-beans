@@ -2,5 +2,7 @@
   "item.mushroom-stuff.spore": "Spore",
   "item.mushroom-stuff.glowing_spore": "Glowing Spore",
 
+  "block.mushroom-stuff.spore_block": "Block of Spores",
+
   "itemgroup.spore": "Mushroom Stuff"
 }
