@@ -14,9 +14,11 @@ import net.sadmush.mushroomstuff.MushroomStuff;
 public class ModItems {
 
     public static final Item SPORE = registerItem("spore", new Item(new FabricItemSettings()));
+    public static final Item GLOWING_SPORE = registerItem("glowing_spore", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(SPORE);
+        entries.add(GLOWING_SPORE);
     }
 
     private static Item registerItem(String name, Item item) {

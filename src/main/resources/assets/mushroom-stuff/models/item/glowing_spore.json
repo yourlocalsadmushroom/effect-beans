@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "mushroom-stuff:item/spore"
+    "layer0": "mushroom-stuff:item/glowing_spore"
   }
 }
