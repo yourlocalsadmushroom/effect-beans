@@ -1,4 +1,6 @@
 {
   "item.mushroom-stuff.spore": "Spore",
-  "item.mushroom-stuff.glowing_spore": "Glowing Spore"
+  "item.mushroom-stuff.glowing_spore": "Glowing Spore",
+
+  "itemgroup.spore": "Mushroom Stuff"
 }
