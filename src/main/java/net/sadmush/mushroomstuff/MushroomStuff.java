@@ -11,6 +11,6 @@ public class MushroomStuff implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("MushroomStuff initialized | Hope you enjoy the funny mushroom blocks!");
 	}
 }
