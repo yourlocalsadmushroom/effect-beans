@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "mushroom-stuff:glowing_spore_block"
+    }
+  ],
+  "result": {
+    "item": "mushroom-stuff:glowing_spore",
+    "count": 9
+  }
+}

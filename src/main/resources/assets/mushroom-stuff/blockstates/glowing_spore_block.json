@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mushroom-stuff:block/glowing_spore_block"
+    }
+  }
+}

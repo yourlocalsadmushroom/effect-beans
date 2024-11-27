@@ -22,11 +22,12 @@ public class ModItems {
     }
 
     private static Item registerItem(String name, Item item) {
+        MushroomStuff.LOGGER.info("Registering " + name);
         return Registry.register(Registries.ITEM, new Identifier(MushroomStuff.MOD_ID, name), item);
     }
 
     public static void registerModItems() {
-        MushroomStuff.LOGGER.info("Register Mod Items for " + MushroomStuff.MOD_ID);
+        MushroomStuff.LOGGER.info("Registered Mod Items for " + MushroomStuff.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientTabItemGroup);
     }

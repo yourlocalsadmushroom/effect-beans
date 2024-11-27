@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "mushroom-stuff:spore"
+    }
+  },
+  "result": {
+    "item": "mushroom-stuff:spore_block"
+  }
+}

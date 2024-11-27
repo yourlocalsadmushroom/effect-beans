@@ -3,6 +3,8 @@
   "item.mushroom-stuff.glowing_spore": "Glowing Spore",
 
   "block.mushroom-stuff.spore_block": "Block of Spores",
+  "block.mushroom-stuff.glowing_spore_block": "Glowing Block of Spores",
+  "block.mushroom-stuff.goop": "Goop",
 
   "itemgroup.spore": "Mushroom Stuff"
 }

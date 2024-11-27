@@ -20,6 +20,8 @@ public class ModItemGroups {
 
 
         entries.add(ModBlocks.SPORE_BLOCK);
+        entries.add(ModBlocks.GLOWING_SPORE_BLOCK);
+        entries.add(ModBlocks.GOOP);
     }).build());
     public static void registerItemGroups() {
         MushroomStuff.LOGGER.info("Registering Item Groups " + MushroomStuff.MOD_ID);
