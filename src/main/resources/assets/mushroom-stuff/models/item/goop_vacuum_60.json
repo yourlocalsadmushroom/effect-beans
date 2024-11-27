@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "mushroom-stuff:item/goop_vacuum_60"
+  }
+}

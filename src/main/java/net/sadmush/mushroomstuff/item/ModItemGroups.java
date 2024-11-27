@@ -19,6 +19,15 @@ public class ModItemGroups {
         entries.add(ModItems.GLOWING_SPORE);
         entries.add(ModItems.ECHO_CLUSTER);
         entries.add(ModItems.GOOP_VACUUM);
+        entries.add(ModItems.GOOP_VACUUM_90);
+        entries.add(ModItems.GOOP_VACUUM_80);
+        entries.add(ModItems.GOOP_VACUUM_70);
+        entries.add(ModItems.GOOP_VACUUM_60);
+        entries.add(ModItems.GOOP_VACUUM_50);
+        entries.add(ModItems.GOOP_VACUUM_40);
+        entries.add(ModItems.GOOP_VACUUM_30);
+        entries.add(ModItems.GOOP_VACUUM_20);
+        entries.add(ModItems.GOOP_VACUUM_10);
 
 
         entries.add(ModBlocks.SPORE_BLOCK);
