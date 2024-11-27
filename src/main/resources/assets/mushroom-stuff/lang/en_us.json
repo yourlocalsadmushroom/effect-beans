@@ -1,6 +1,8 @@
 {
   "item.mushroom-stuff.spore": "Spore",
   "item.mushroom-stuff.glowing_spore": "Glowing Spore",
+  "item.mushroom-stuff.echo_cluster": "Echo Cluster",
+  "item.mushroom-stuff.goop_vacuum": "Goop Vacuum",
 
   "block.mushroom-stuff.spore_block": "Block of Spores",
   "block.mushroom-stuff.glowing_spore_block": "Glowing Block of Spores",

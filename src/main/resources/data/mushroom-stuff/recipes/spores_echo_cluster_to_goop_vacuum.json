@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#+#",
+    "+!+",
+    "#+#"
+  ],
+  "key": {
+    "#": {
+      "item": "mushroom-stuff:spore_block"
+    },
+    "+": {
+      "item": "mushroom-stuff:glowing_spore_block"
+    },
+    "!": {
+      "item": "mushroom-stuff:echo_cluster"
+    }
+  },
+  "result": {
+    "item": "mushroom-stuff:goop_vacuum"
+  }
+}

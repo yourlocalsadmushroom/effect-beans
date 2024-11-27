@@ -10,15 +10,20 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.sadmush.mushroomstuff.MushroomStuff;
+import net.sadmush.mushroomstuff.item.custom.GoopVacuumItem;
 
 public class ModItems {
 
     public static final Item SPORE = registerItem("spore", new Item(new FabricItemSettings()));
     public static final Item GLOWING_SPORE = registerItem("glowing_spore", new Item(new FabricItemSettings()));
+    public static final Item ECHO_CLUSTER = registerItem("echo_cluster", new Item(new FabricItemSettings()));
+
+    public static final Item GOOP_VACUUM = registerItem("goop_vacuum", new GoopVacuumItem(new FabricItemSettings().maxDamage(10)));
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(SPORE);
         entries.add(GLOWING_SPORE);
+        entries.add(ECHO_CLUSTER);
     }
 
     private static Item registerItem(String name, Item item) {
