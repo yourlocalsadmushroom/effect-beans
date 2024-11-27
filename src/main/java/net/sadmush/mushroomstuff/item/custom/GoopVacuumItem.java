@@ -1,6 +1,7 @@
 package net.sadmush.mushroomstuff.item.custom;
 
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemUsageContext;
@@ -23,9 +24,11 @@ public class GoopVacuumItem extends Item {
 
             BlockState state = context.getWorld().getBlockState(positionClicked);
             if(isGoop(state)) {
-                player.sendMessage(Text.literal("Goop Found"), false);
-
+                context.getWorld().setBlockState(positionClicked, Blocks.AIR.getDefaultState());
                 context.getStack().damage(1, context.getPlayer(), playerEntity -> playerEntity.sendToolBreakStatus(playerEntity.getActiveHand()));
+            }
+            if(!isGoop(state)) {
+                player.sendMessage(Text.literal("No Goop found..."));
             }
         }
 
