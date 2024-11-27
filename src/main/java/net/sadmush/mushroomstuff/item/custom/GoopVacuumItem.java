@@ -27,40 +27,78 @@ public class GoopVacuumItem extends Item {
 
             BlockState state = context.getWorld().getBlockState(positionClicked);
             if(isGoop(state)) {
-                context.getWorld().setBlockState(positionClicked, Blocks.AIR.getDefaultState());
-                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.GOOP_VACUUM_10)) {
+                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_10)) {
+                    context.getWorld().setBlockState(positionClicked, Blocks.AIR.getDefaultState());
                     player.setStackInHand(player.getActiveHand(), new ItemStack(Items.AIR));
                 }
-                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.GOOP_VACUUM_20)) {
+                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_20)) {
+                    context.getWorld().setBlockState(positionClicked, Blocks.AIR.getDefaultState());
                     player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.GOOP_VACUUM_10));
                 }
-                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.GOOP_VACUUM_30)) {
+                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_30)) {
+                    context.getWorld().setBlockState(positionClicked, Blocks.AIR.getDefaultState());
                     player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.GOOP_VACUUM_20));
                 }
-                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.GOOP_VACUUM_40)) {
+                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_40)) {
+                    context.getWorld().setBlockState(positionClicked, Blocks.AIR.getDefaultState());
                     player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.GOOP_VACUUM_30));
                 }
-                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.GOOP_VACUUM_50)) {
+                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_50)) {
+                    context.getWorld().setBlockState(positionClicked, Blocks.AIR.getDefaultState());
                     player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.GOOP_VACUUM_40));
                 }
-                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.GOOP_VACUUM_60)) {
+                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_60)) {
+                    context.getWorld().setBlockState(positionClicked, Blocks.AIR.getDefaultState());
                     player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.GOOP_VACUUM_50));
                 }
-                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.GOOP_VACUUM_70)) {
+                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_70)) {
+                    context.getWorld().setBlockState(positionClicked, Blocks.AIR.getDefaultState());
                     player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.GOOP_VACUUM_60));
                 }
-                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.GOOP_VACUUM_80)) {
+                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_80)) {
+                    context.getWorld().setBlockState(positionClicked, Blocks.AIR.getDefaultState());
                     player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.GOOP_VACUUM_70));
                 }
-                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.GOOP_VACUUM_90)) {
+                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_90)) {
+                    context.getWorld().setBlockState(positionClicked, Blocks.AIR.getDefaultState());
                     player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.GOOP_VACUUM_80));
                 }
-                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.GOOP_VACUUM)) {
+                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM)) {
+                    context.getWorld().setBlockState(positionClicked, Blocks.AIR.getDefaultState());
                     player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.GOOP_VACUUM_90));
                 }
             }
             if(!isGoop(state)) {
-                player.sendMessage(Text.literal("No Goop found..."));
+                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM)) {
+                    player.sendMessage(Text.literal("No Goop found..."));
+                }
+                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_90)) {
+                    player.sendMessage(Text.literal("No Goop found..."));
+                }
+                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_80)) {
+                    player.sendMessage(Text.literal("No Goop found..."));
+                }
+                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_70)) {
+                    player.sendMessage(Text.literal("No Goop found..."));
+                }
+                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_60)) {
+                    player.sendMessage(Text.literal("No Goop found..."));
+                }
+                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_50)) {
+                    player.sendMessage(Text.literal("No Goop found..."));
+                }
+                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_40)) {
+                    player.sendMessage(Text.literal("No Goop found..."));
+                }
+                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_30)) {
+                    player.sendMessage(Text.literal("No Goop found..."));
+                }
+                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_20)) {
+                    player.sendMessage(Text.literal("No Goop found..."));
+                }
+                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_10)) {
+                    player.sendMessage(Text.literal("No Goop found..."));
+                }
             }
         }
 
