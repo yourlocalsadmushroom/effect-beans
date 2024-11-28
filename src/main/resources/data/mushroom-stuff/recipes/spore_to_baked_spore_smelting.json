@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 20,
+  "experience": 0.1,
+  "group": "spore",
+  "ingredient": {
+    "item": "mushroom-stuff:spore"
+  },
+  "result": "mushroom-stuff:baked_spore"
+}

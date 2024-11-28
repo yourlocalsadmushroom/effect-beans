@@ -15,8 +15,11 @@ import net.sadmush.mushroomstuff.item.custom.GoopVacuumItem;
 public class ModItems {
 
     public static final Item SPORE = registerItem("spore", new Item(new FabricItemSettings()));
+    public static final Item BURNT_SPORE = registerItem("burnt_spore", new Item(new FabricItemSettings()));
     public static final Item GLOWING_SPORE = registerItem("glowing_spore", new Item(new FabricItemSettings()));
     public static final Item ECHO_CLUSTER = registerItem("echo_cluster", new Item(new FabricItemSettings()));
+
+    public static final Item BAKED_SPORE = registerItem("baked_spore", new Item(new FabricItemSettings().food(ModFoodComponents.BAKED_SPORE)));
 
     public static final Item GOOP_VACUUM = registerItem("goop_vacuum", new GoopVacuumItem(new FabricItemSettings().maxCount(1)));
     public static final Item GOOP_VACUUM_90 = registerItem("goop_vacuum_90", new GoopVacuumItem(new FabricItemSettings().maxCount(1)));

@@ -33,7 +33,7 @@ public class GoopVacuumItem extends Item {
                 }
                 if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_20)) {
                     context.getWorld().setBlockState(positionClicked, Blocks.AIR.getDefaultState());
-                    player.sendMessage(Text.literal("WARNING ⚠\uFE0F Low on energy!"));
+                    player.sendMessage(Text.literal("WARNING ⚠ Low on energy!"));
                     player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.GOOP_VACUUM_10));
                 }
                 if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_30)) {

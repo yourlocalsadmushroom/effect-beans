@@ -1,6 +1,8 @@
 {
   "item.mushroom-stuff.spore": "Spore",
   "item.mushroom-stuff.glowing_spore": "Glowing Spore",
+  "item.mushroom-stuff.baked_spore": "Baked Spore",
+  "item.mushroom-stuff.burnt_spore": "Burnt Spore",
   "item.mushroom-stuff.echo_cluster": "Echo Cluster",
   "item.mushroom-stuff.goop_vacuum": "Goop Vacuum - 100%",
   "item.mushroom-stuff.goop_vacuum_90": "Goop Vacuum - 90%",
