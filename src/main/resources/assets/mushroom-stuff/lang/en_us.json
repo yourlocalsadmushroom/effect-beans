@@ -14,6 +14,12 @@
   "item.mushroom-stuff.goop_vacuum_30": "Goop Vacuum - 30%",
   "item.mushroom-stuff.goop_vacuum_20": "Goop Vacuum - 20%",
   "item.mushroom-stuff.goop_vacuum_10": "Goop Vacuum - 10%",
+  "item.mushroom-stuff.spore_harvester": "Spore Harvester - 100%",
+  "item.mushroom-stuff.spore_harvester_80": "Spore Harvester - 80%",
+  "item.mushroom-stuff.spore_harvester_60": "Spore Harvester - 60%",
+  "item.mushroom-stuff.spore_harvester_40": "Spore Harvester - 40%",
+  "item.mushroom-stuff.spore_harvester_20": "Spore Harvester - 20%",
+
 
   "block.mushroom-stuff.spore_block": "Block of Spores",
   "block.mushroom-stuff.glowing_spore_block": "Glowing Block of Spores",

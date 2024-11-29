@@ -11,6 +11,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.sadmush.mushroomstuff.MushroomStuff;
 import net.sadmush.mushroomstuff.item.custom.GoopVacuumItem;
+import net.sadmush.mushroomstuff.item.custom.SporeHarvesterItem;
 
 public class ModItems {
 
@@ -32,10 +33,21 @@ public class ModItems {
     public static final Item GOOP_VACUUM_20 = registerItem("goop_vacuum_20", new GoopVacuumItem(new FabricItemSettings().maxCount(1)));
     public static final Item GOOP_VACUUM_10 = registerItem("goop_vacuum_10", new GoopVacuumItem(new FabricItemSettings().maxCount(1)));
 
+    public static final Item SPORE_HARVESTER = registerItem("spore_harvester", new SporeHarvesterItem(new FabricItemSettings().maxCount(1)));
+    public static final Item SPORE_HARVESTER_80 = registerItem("spore_harvester_80", new SporeHarvesterItem(new FabricItemSettings().maxCount(1)));
+    public static final Item SPORE_HARVESTER_60 = registerItem("spore_harvester_60", new SporeHarvesterItem(new FabricItemSettings().maxCount(1)));
+    public static final Item SPORE_HARVESTER_40 = registerItem("spore_harvester_40", new SporeHarvesterItem(new FabricItemSettings().maxCount(1)));
+    public static final Item SPORE_HARVESTER_20 = registerItem("spore_harvester_20", new SporeHarvesterItem(new FabricItemSettings().maxCount(1)));
+
+
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(SPORE);
         entries.add(GLOWING_SPORE);
         entries.add(ECHO_CLUSTER);
+    }
+
+    private static void addItemsToFoodTabItemGroup(FabricItemGroupEntries entries) {
+        entries.add(BAKED_SPORE);
     }
 
     private static Item registerItem(String name, Item item) {
@@ -47,5 +59,6 @@ public class ModItems {
         MushroomStuff.LOGGER.info("Registered Mod Items for " + MushroomStuff.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientTabItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItems::addItemsToFoodTabItemGroup);
     }
 }

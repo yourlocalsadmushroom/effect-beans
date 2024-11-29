@@ -30,6 +30,11 @@ public class ModItemGroups {
         entries.add(ModItems.GOOP_VACUUM_30);
         entries.add(ModItems.GOOP_VACUUM_20);
         entries.add(ModItems.GOOP_VACUUM_10);
+        entries.add(ModItems.SPORE_HARVESTER);
+        entries.add(ModItems.SPORE_HARVESTER_80);
+        entries.add(ModItems.SPORE_HARVESTER_60);
+        entries.add(ModItems.SPORE_HARVESTER_40);
+        entries.add(ModItems.SPORE_HARVESTER_20);
 
 
         entries.add(ModBlocks.SPORE_BLOCK);
