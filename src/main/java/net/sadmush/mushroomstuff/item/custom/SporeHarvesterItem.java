@@ -32,12 +32,19 @@ public class SporeHarvesterItem extends Item {
         if(!context.getWorld().isClient()) {
             BlockPos positionClicked = context.getBlockPos();
             PlayerEntity player = context.getPlayer();
+            boolean sporeFound = false;
 
+            player.sendMessage(Text.literal("ANALYZING...").formatted(Formatting.DARK_AQUA).formatted(Formatting.BOLD));
+            player.sendMessage(Text.literal("--------------------").formatted(Formatting.DARK_AQUA).formatted(Formatting.BOLD));
             BlockState state = context.getWorld().getBlockState(positionClicked);
             if (state.isIn(ModTags.Blocks.SPORE_HARVESTER_HARVEST_BLOCKS)) {
                 context.getWorld().setBlockState(positionClicked, Blocks.AIR.getDefaultState());
                 Random rand = new Random();
-                player.giveItemStack(new ItemStack(ModItems.SPORE, rand.nextInt(12) + 9));
+                int sporeCount = rand.nextInt(12) + 9;
+                player.giveItemStack(new ItemStack(ModItems.SPORE, sporeCount));
+                player.sendMessage(Text.literal("SPORES FOUND!").formatted(Formatting.AQUA));
+                player.sendMessage(Text.literal("COUNT: " + sporeCount).formatted(Formatting.AQUA));
+                sporeFound = true;
 
                 if(player.getMainHandStack().isOf(ModItems.SPORE_HARVESTER_20)) {
                     player.setStackInHand(player.getActiveHand(), new ItemStack(Items.AIR));
@@ -58,7 +65,11 @@ public class SporeHarvesterItem extends Item {
             if (state.isIn(ModTags.Blocks.SPORE_HARVESTER_HARVEST_PLANTS)) {
                 context.getWorld().setBlockState(positionClicked, Blocks.AIR.getDefaultState());
                 Random rand = new Random();
-                player.giveItemStack(new ItemStack(ModItems.SPORE, rand.nextInt(6) + 3));
+                int sporeCount = rand.nextInt(6) + 3;
+                player.giveItemStack(new ItemStack(ModItems.SPORE, sporeCount));
+                player.sendMessage(Text.literal("SPORES FOUND!").formatted(Formatting.AQUA));
+                player.sendMessage(Text.literal("COUNT: " + sporeCount).formatted(Formatting.AQUA));
+                sporeFound = true;
 
                 if(player.getMainHandStack().isOf(ModItems.SPORE_HARVESTER_20)) {
                     player.setStackInHand(player.getActiveHand(), new ItemStack(Items.AIR));
@@ -76,6 +87,10 @@ public class SporeHarvesterItem extends Item {
                     player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.SPORE_HARVESTER_80));
                 }
             }
+            if(!sporeFound) {
+                player.sendMessage(Text.literal("Spores not found.").formatted(Formatting.DARK_RED));
+            }
+            player.sendMessage(Text.literal(""));
         }
 
 
