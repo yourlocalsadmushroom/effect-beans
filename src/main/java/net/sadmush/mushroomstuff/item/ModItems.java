@@ -21,6 +21,13 @@ public class ModItems {
     public static final Item ECHO_CLUSTER = registerItem("echo_cluster", new Item(new FabricItemSettings()));
 
     public static final Item BAKED_SPORE = registerItem("baked_spore", new Item(new FabricItemSettings().food(ModFoodComponents.BAKED_SPORE)));
+    public static final Item SPOREBEAN = registerItem("sporebean", new Item(new FabricItemSettings().food(ModFoodComponents.SPOREBEAN).maxCount(1)));
+    public static final Item RED_SPOREBEAN = registerItem("red_sporebean", new Item(new FabricItemSettings().food(ModFoodComponents.RED_SPOREBEAN).maxCount(1)));
+    public static final Item BLUE_SPOREBEAN = registerItem("blue_sporebean", new Item(new FabricItemSettings().food(ModFoodComponents.BLUE_SPOREBEAN).maxCount(1)));
+    public static final Item GREEN_SPOREBEAN = registerItem("green_sporebean", new Item(new FabricItemSettings().food(ModFoodComponents.GREEN_SPOREBEAN).maxCount(1)));
+    public static final Item YELLOW_SPOREBEAN = registerItem("yellow_sporebean", new Item(new FabricItemSettings().food(ModFoodComponents.YELLOW_SPOREBEAN).maxCount(1)));
+    public static final Item PURPLE_SPOREBEAN = registerItem("purple_sporebean", new Item(new FabricItemSettings().food(ModFoodComponents.PURPLE_SPOREBEAN).maxCount(1)));
+    public static final Item GRAY_SPOREBEAN = registerItem("gray_sporebean", new Item(new FabricItemSettings().food(ModFoodComponents.GRAY_SPOREBEAN).maxCount(1)));
 
     public static final Item GOOP_VACUUM = registerItem("goop_vacuum", new GoopVacuumItem(new FabricItemSettings().maxCount(1)));
     public static final Item GOOP_VACUUM_90 = registerItem("goop_vacuum_90", new GoopVacuumItem(new FabricItemSettings().maxCount(1)));
@@ -48,6 +55,13 @@ public class ModItems {
 
     private static void addItemsToFoodTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(BAKED_SPORE);
+        entries.add(SPOREBEAN);
+        entries.add(RED_SPOREBEAN);
+        entries.add(BLUE_SPOREBEAN);
+        entries.add(GREEN_SPOREBEAN);
+        entries.add(YELLOW_SPOREBEAN);
+        entries.add(PURPLE_SPOREBEAN);
+        entries.add(GRAY_SPOREBEAN);
     }
 
     private static Item registerItem(String name, Item item) {

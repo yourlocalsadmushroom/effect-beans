@@ -19,6 +19,13 @@ public class ModItemGroups {
         entries.add(ModItems.GLOWING_SPORE);
         entries.add(ModItems.BAKED_SPORE);
         entries.add(ModItems.BURNT_SPORE);
+        entries.add(ModItems.SPOREBEAN);
+        entries.add(ModItems.RED_SPOREBEAN);
+        entries.add(ModItems.YELLOW_SPOREBEAN);
+        entries.add(ModItems.GREEN_SPOREBEAN);
+        entries.add(ModItems.BLUE_SPOREBEAN);
+        entries.add(ModItems.PURPLE_SPOREBEAN);
+        entries.add(ModItems.GRAY_SPOREBEAN);
         entries.add(ModItems.ECHO_CLUSTER);
         entries.add(ModItems.GOOP_VACUUM);
         entries.add(ModItems.GOOP_VACUUM_90);

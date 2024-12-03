@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "spore",
+  "ingredients": [
+    {
+      "tag": "mushroom-stuff:sporebeans"
+    },
+    {
+      "item": "minecraft:green_dye"
+    }
+  ],
+  "result": {
+    "item": "mushroom-stuff:green_sporebean",
+    "count": 1
+  }
+}

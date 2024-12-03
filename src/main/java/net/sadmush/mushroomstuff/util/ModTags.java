@@ -20,6 +20,9 @@ public class ModTags {
     }
 
     public static class Items {
+        public static final TagKey<Item> SPORE_HARVESTER_HARVEST_PLANTS =
+                createTag("sporebeans");
+
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, new Identifier(MushroomStuff.MOD_ID, name));
         }
