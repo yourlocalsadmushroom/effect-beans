@@ -16,6 +16,8 @@ import net.sadmush.mushroomstuff.MushroomStuff;
 public class ModBlocks {
     public static final Block SPORE_BLOCK = registerBlock("spore_block", new Block(FabricBlockSettings.copyOf(Blocks.SLIME_BLOCK).requiresTool()));
     public static final Block GLOWING_SPORE_BLOCK = registerBlock("glowing_spore_block", new Block(FabricBlockSettings.copyOf(Blocks.SLIME_BLOCK).luminance((state) -> 10).mapColor(MapColor.LIGHT_BLUE).requiresTool()));
+    public static final Block DRIED_SPORE_BLOCK = registerBlock("dried_spore_block", new Block(FabricBlockSettings.copyOf(Blocks.WHITE_CONCRETE).mapColor(MapColor.PALE_GREEN).sounds(BlockSoundGroup.SLIME)));
+    public static final Block DRIED_GLOWING_SPORE_BLOCK = registerBlock("dried_glowing_spore_block", new Block(FabricBlockSettings.copyOf(Blocks.WHITE_CONCRETE).luminance((state) -> 10).mapColor(MapColor.LIGHT_BLUE).sounds(BlockSoundGroup.SLIME)));
     public static final Block GOOP = registerBlock("goop", new Block(FabricBlockSettings.copyOf(Blocks.BEDROCK).luminance((state) -> 2).mapColor(MapColor.BLACK).dropsNothing().sounds(BlockSoundGroup.SLIME)));
     private static Block registerBlock(String name, Block block) {
         MushroomStuff.LOGGER.info("Registering " + name);

@@ -46,19 +46,19 @@ public class SporeHarvesterItem extends Item {
                 player.sendMessage(Text.literal("COUNT: " + sporeCount).formatted(Formatting.AQUA));
                 sporeFound = true;
 
-                if(player.getMainHandStack().isOf(ModItems.SPORE_HARVESTER_20)) {
+                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.SPORE_HARVESTER_20)) {
                     player.setStackInHand(player.getActiveHand(), new ItemStack(Items.AIR));
                 }
-                if(player.getMainHandStack().isOf(ModItems.SPORE_HARVESTER_40)) {
+                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.SPORE_HARVESTER_40)) {
                     player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.SPORE_HARVESTER_20));
                 }
-                if(player.getMainHandStack().isOf(ModItems.SPORE_HARVESTER_60)) {
+                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.SPORE_HARVESTER_60)) {
                     player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.SPORE_HARVESTER_40));
                 }
-                if(player.getMainHandStack().isOf(ModItems.SPORE_HARVESTER_80)) {
+                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.SPORE_HARVESTER_80)) {
                     player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.SPORE_HARVESTER_60));
                 }
-                if(player.getMainHandStack().isOf(ModItems.SPORE_HARVESTER)) {
+                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.SPORE_HARVESTER)) {
                     player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.SPORE_HARVESTER_80));
                 }
             }
@@ -71,19 +71,44 @@ public class SporeHarvesterItem extends Item {
                 player.sendMessage(Text.literal("COUNT: " + sporeCount).formatted(Formatting.AQUA));
                 sporeFound = true;
 
-                if(player.getMainHandStack().isOf(ModItems.SPORE_HARVESTER_20)) {
+                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.SPORE_HARVESTER_20)) {
                     player.setStackInHand(player.getActiveHand(), new ItemStack(Items.AIR));
                 }
-                if(player.getMainHandStack().isOf(ModItems.SPORE_HARVESTER_40)) {
+                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.SPORE_HARVESTER_40)) {
                     player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.SPORE_HARVESTER_20));
                 }
-                if(player.getMainHandStack().isOf(ModItems.SPORE_HARVESTER_60)) {
+                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.SPORE_HARVESTER_60)) {
                     player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.SPORE_HARVESTER_40));
                 }
-                if(player.getMainHandStack().isOf(ModItems.SPORE_HARVESTER_80)) {
+                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.SPORE_HARVESTER_80)) {
                     player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.SPORE_HARVESTER_60));
                 }
-                if(player.getMainHandStack().isOf(ModItems.SPORE_HARVESTER)) {
+                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.SPORE_HARVESTER)) {
+                    player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.SPORE_HARVESTER_80));
+                }
+            }
+            if(state.isOf(Blocks.MYCELIUM)) {
+                context.getWorld().setBlockState(positionClicked, Blocks.DIRT.getDefaultState());
+                Random rand = new Random();
+                int sporeCount = rand.nextInt(3) + 1;
+                player.giveItemStack(new ItemStack(ModItems.SPORE, sporeCount));
+                player.sendMessage(Text.literal("SPORES FOUND!").formatted(Formatting.AQUA));
+                player.sendMessage(Text.literal("COUNT: " + sporeCount).formatted(Formatting.AQUA));
+                sporeFound = true;
+
+                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.SPORE_HARVESTER_20)) {
+                    player.setStackInHand(player.getActiveHand(), new ItemStack(Items.AIR));
+                }
+                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.SPORE_HARVESTER_40)) {
+                    player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.SPORE_HARVESTER_20));
+                }
+                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.SPORE_HARVESTER_60)) {
+                    player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.SPORE_HARVESTER_40));
+                }
+                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.SPORE_HARVESTER_80)) {
+                    player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.SPORE_HARVESTER_60));
+                }
+                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.SPORE_HARVESTER)) {
                     player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.SPORE_HARVESTER_80));
                 }
             }
@@ -100,7 +125,21 @@ public class SporeHarvesterItem extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.literal("Harvests Spores from Mushroom Blocks").formatted(Formatting.DARK_AQUA));
+        if(stack.isOf(ModItems.SPORE_HARVESTER)) {
+            tooltip.add(Text.literal("Energy: 100%").formatted(Formatting.DARK_AQUA));
+        }
+        if(stack.isOf(ModItems.SPORE_HARVESTER_80)) {
+            tooltip.add(Text.literal("Energy: 80%").formatted(Formatting.DARK_AQUA));
+        }
+        if(stack.isOf(ModItems.SPORE_HARVESTER_60)) {
+            tooltip.add(Text.literal("Energy: 60%").formatted(Formatting.DARK_AQUA));
+        }
+        if(stack.isOf(ModItems.SPORE_HARVESTER_40)) {
+            tooltip.add(Text.literal("Energy: 40%").formatted(Formatting.DARK_AQUA));
+        }
+        if(stack.isOf(ModItems.SPORE_HARVESTER_20)) {
+            tooltip.add(Text.literal("Energy: 20%").formatted(Formatting.DARK_AQUA));
+        }
         super.appendTooltip(stack, world, tooltip, context);
     }
 }

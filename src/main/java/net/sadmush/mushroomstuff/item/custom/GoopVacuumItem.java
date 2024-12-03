@@ -33,79 +33,47 @@ public class GoopVacuumItem extends Item {
 
             BlockState state = context.getWorld().getBlockState(positionClicked);
             if(isGoop(state)) {
-                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_10)) {
+                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.GOOP_VACUUM_10)) {
                     context.getWorld().setBlockState(positionClicked, Blocks.AIR.getDefaultState());
                     player.setStackInHand(player.getActiveHand(), new ItemStack(Items.AIR));
                 }
-                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_20)) {
+                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.GOOP_VACUUM_20)) {
                     context.getWorld().setBlockState(positionClicked, Blocks.AIR.getDefaultState());
                     player.sendMessage(Text.literal("WARNING ⚠").formatted(Formatting.BOLD).formatted(Formatting.RED));
                     player.sendMessage(Text.literal("Energy running low.").formatted(Formatting.DARK_RED));
                     player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.GOOP_VACUUM_10));
                 }
-                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_30)) {
+                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.GOOP_VACUUM_30)) {
                     context.getWorld().setBlockState(positionClicked, Blocks.AIR.getDefaultState());
                     player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.GOOP_VACUUM_20));
                 }
-                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_40)) {
+                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.GOOP_VACUUM_40)) {
                     context.getWorld().setBlockState(positionClicked, Blocks.AIR.getDefaultState());
                     player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.GOOP_VACUUM_30));
                 }
-                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_50)) {
+                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.GOOP_VACUUM_50)) {
                     context.getWorld().setBlockState(positionClicked, Blocks.AIR.getDefaultState());
                     player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.GOOP_VACUUM_40));
                 }
-                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_60)) {
+                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.GOOP_VACUUM_60)) {
                     context.getWorld().setBlockState(positionClicked, Blocks.AIR.getDefaultState());
                     player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.GOOP_VACUUM_50));
                 }
-                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_70)) {
+                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.GOOP_VACUUM_70)) {
                     context.getWorld().setBlockState(positionClicked, Blocks.AIR.getDefaultState());
                     player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.GOOP_VACUUM_60));
                 }
-                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_80)) {
+                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.GOOP_VACUUM_80)) {
                     context.getWorld().setBlockState(positionClicked, Blocks.AIR.getDefaultState());
                     player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.GOOP_VACUUM_70));
                 }
-                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_90)) {
+                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.GOOP_VACUUM_90)) {
                     context.getWorld().setBlockState(positionClicked, Blocks.AIR.getDefaultState());
                     player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.GOOP_VACUUM_80));
                 }
-                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM)) {
+                if(player.getStackInHand(player.getActiveHand()).isOf(ModItems.GOOP_VACUUM)) {
                     context.getWorld().setBlockState(positionClicked, Blocks.AIR.getDefaultState());
                     player.setStackInHand(player.getActiveHand(), new ItemStack(ModItems.GOOP_VACUUM_90));
-                }
-            }
-            if(!isGoop(state)) {
-                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM)) {
-                    player.sendMessage(Text.literal("No Goop found..."));
-                }
-                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_90)) {
-                    player.sendMessage(Text.literal("No Goop found..."));
-                }
-                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_80)) {
-                    player.sendMessage(Text.literal("No Goop found..."));
-                }
-                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_70)) {
-                    player.sendMessage(Text.literal("No Goop found..."));
-                }
-                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_60)) {
-                    player.sendMessage(Text.literal("No Goop found..."));
-                }
-                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_50)) {
-                    player.sendMessage(Text.literal("No Goop found..."));
-                }
-                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_40)) {
-                    player.sendMessage(Text.literal("No Goop found..."));
-                }
-                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_30)) {
-                    player.sendMessage(Text.literal("No Goop found..."));
-                }
-                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_20)) {
-                    player.sendMessage(Text.literal("No Goop found..."));
-                }
-                if(player.getMainHandStack().isOf(ModItems.GOOP_VACUUM_10)) {
-                    player.sendMessage(Text.literal("No Goop found..."));
                 }
             }
         }
@@ -121,7 +89,36 @@ public class GoopVacuumItem extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.literal("Vaporizes Goop").formatted(Formatting.DARK_RED));
+        if(stack.isOf(ModItems.GOOP_VACUUM)) {
+            tooltip.add(Text.literal("Energy: 100%").formatted(Formatting.DARK_RED));
+        }
+        if(stack.isOf(ModItems.GOOP_VACUUM_90)) {
+            tooltip.add(Text.literal("Energy: 90%").formatted(Formatting.DARK_RED));
+        }
+        if(stack.isOf(ModItems.GOOP_VACUUM_80)) {
+            tooltip.add(Text.literal("Energy: 80%").formatted(Formatting.DARK_RED));
+        }
+        if(stack.isOf(ModItems.GOOP_VACUUM_70)) {
+            tooltip.add(Text.literal("Energy: 70%").formatted(Formatting.DARK_RED));
+        }
+        if(stack.isOf(ModItems.GOOP_VACUUM_60)) {
+            tooltip.add(Text.literal("Energy: 60%").formatted(Formatting.DARK_RED));
+        }
+        if(stack.isOf(ModItems.GOOP_VACUUM_50)) {
+            tooltip.add(Text.literal("Energy: 50%").formatted(Formatting.DARK_RED));
+        }
+        if(stack.isOf(ModItems.GOOP_VACUUM_40)) {
+            tooltip.add(Text.literal("Energy: 40%").formatted(Formatting.DARK_RED));
+        }
+        if(stack.isOf(ModItems.GOOP_VACUUM_30)) {
+            tooltip.add(Text.literal("Energy: 30%").formatted(Formatting.DARK_RED));
+        }
+        if(stack.isOf(ModItems.GOOP_VACUUM_20)) {
+            tooltip.add(Text.literal("Energy: 20%").formatted(Formatting.DARK_RED));
+        }
+        if(stack.isOf(ModItems.GOOP_VACUUM_10)) {
+            tooltip.add(Text.literal("Energy: 10%").formatted(Formatting.DARK_RED));
+        }
         super.appendTooltip(stack, world, tooltip, context);
     }
 }

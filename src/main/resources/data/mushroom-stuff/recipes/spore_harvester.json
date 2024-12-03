@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "-  ",
+    " $ ",
+    "  /"
+  ],
+  "key": {
+    "/": {
+      "item": "minecraft:glass"
+    },
+    "$": {
+      "item": "minecraft:redstone_block"
+    },
+    "-": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "mushroom-stuff:spore_harvester"
+  }
+}

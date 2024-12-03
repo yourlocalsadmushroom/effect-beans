@@ -4,10 +4,13 @@
   "ingredients": [
     {
       "item": "mushroom-stuff:spore_block"
+    },
+    {
+      "item": "minecraft:clay_ball"
     }
   ],
   "result": {
-    "item": "mushroom-stuff:spore",
-    "count": 9
+    "item": "mushroom-stuff:dried_spore_block",
+    "count": 1
   }
 }

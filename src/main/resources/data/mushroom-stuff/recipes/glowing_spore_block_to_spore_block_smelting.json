@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smelting",
-  "category": "misc",
+  "category": "spore",
   "cookingtime": 450,
   "experience": 2.5,
   "group": "spore",

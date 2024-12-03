@@ -39,6 +39,8 @@ public class ModItemGroups {
 
         entries.add(ModBlocks.SPORE_BLOCK);
         entries.add(ModBlocks.GLOWING_SPORE_BLOCK);
+        entries.add(ModBlocks.DRIED_SPORE_BLOCK);
+        entries.add(ModBlocks.DRIED_GLOWING_SPORE_BLOCK);
         entries.add(ModBlocks.GOOP);
     }).build());
     public static void registerItemGroups() {
