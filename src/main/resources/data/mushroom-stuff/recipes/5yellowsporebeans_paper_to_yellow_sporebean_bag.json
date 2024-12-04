@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "spore",
+  "ingredients": [
+    {
+      "item": "mushroom-stuff:yellow_sporebean"
+    },
+    {
+      "item": "mushroom-stuff:yellow_sporebean"
+    },
+    {
+      "item": "mushroom-stuff:yellow_sporebean"
+    },
+    {
+      "item": "mushroom-stuff:yellow_sporebean"
+    },
+    {
+      "item": "mushroom-stuff:yellow_sporebean"
+    },
+    {
+      "item": "minecraft:paper"
+    }
+  ],
+  "result": {
+    "item": "mushroom-stuff:yellow_sporebean_bag_5",
+    "count": 1
+  }
+}
