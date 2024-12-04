@@ -10,8 +10,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.sadmush.mushroomstuff.MushroomStuff;
-import net.sadmush.mushroomstuff.item.custom.GoopVacuumItem;
-import net.sadmush.mushroomstuff.item.custom.SporeHarvesterItem;
+import net.sadmush.mushroomstuff.item.custom.*;
 
 public class ModItems {
 
@@ -45,6 +44,63 @@ public class ModItems {
     public static final Item SPORE_HARVESTER_60 = registerItem("spore_harvester_60", new SporeHarvesterItem(new FabricItemSettings().maxCount(1)));
     public static final Item SPORE_HARVESTER_40 = registerItem("spore_harvester_40", new SporeHarvesterItem(new FabricItemSettings().maxCount(1)));
     public static final Item SPORE_HARVESTER_20 = registerItem("spore_harvester_20", new SporeHarvesterItem(new FabricItemSettings().maxCount(1)));
+
+    public static final Item SPOREBEAN_BAG = registerItem("sporebean_bag", new SporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item SPOREBEAN_BAG_7 = registerItem("sporebean_bag_7", new SporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item SPOREBEAN_BAG_6 = registerItem("sporebean_bag_6", new SporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item SPOREBEAN_BAG_5 = registerItem("sporebean_bag_5", new SporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item SPOREBEAN_BAG_4 = registerItem("sporebean_bag_4", new SporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item SPOREBEAN_BAG_3 = registerItem("sporebean_bag_3", new SporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item SPOREBEAN_BAG_2 = registerItem("sporebean_bag_2", new SporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item SPOREBEAN_BAG_1 = registerItem("sporebean_bag_1", new SporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item RED_SPOREBEAN_BAG = registerItem("red_sporebean_bag", new RedSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item RED_SPOREBEAN_BAG_7 = registerItem("red_sporebean_bag_7", new RedSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item RED_SPOREBEAN_BAG_6 = registerItem("red_sporebean_bag_6", new RedSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item RED_SPOREBEAN_BAG_5 = registerItem("red_sporebean_bag_5", new RedSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item RED_SPOREBEAN_BAG_4 = registerItem("red_sporebean_bag_4", new RedSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item RED_SPOREBEAN_BAG_3 = registerItem("red_sporebean_bag_3", new RedSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item RED_SPOREBEAN_BAG_2 = registerItem("red_sporebean_bag_2", new RedSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item RED_SPOREBEAN_BAG_1 = registerItem("red_sporebean_bag_1", new RedSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item BLUE_SPOREBEAN_BAG = registerItem("blue_sporebean_bag", new BlueSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item BLUE_SPOREBEAN_BAG_7 = registerItem("blue_sporebean_bag_7", new BlueSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item BLUE_SPOREBEAN_BAG_6 = registerItem("blue_sporebean_bag_6", new BlueSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item BLUE_SPOREBEAN_BAG_5 = registerItem("blue_sporebean_bag_5", new BlueSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item BLUE_SPOREBEAN_BAG_4 = registerItem("blue_sporebean_bag_4", new BlueSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item BLUE_SPOREBEAN_BAG_3 = registerItem("blue_sporebean_bag_3", new BlueSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item BLUE_SPOREBEAN_BAG_2 = registerItem("blue_sporebean_bag_2", new BlueSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item BLUE_SPOREBEAN_BAG_1 = registerItem("blue_sporebean_bag_1", new BlueSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item GRAY_SPOREBEAN_BAG = registerItem("gray_sporebean_bag", new GraySporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item GRAY_SPOREBEAN_BAG_7 = registerItem("gray_sporebean_bag_7", new GraySporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item GRAY_SPOREBEAN_BAG_6 = registerItem("gray_sporebean_bag_6", new GraySporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item GRAY_SPOREBEAN_BAG_5 = registerItem("gray_sporebean_bag_5", new GraySporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item GRAY_SPOREBEAN_BAG_4 = registerItem("gray_sporebean_bag_4", new GraySporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item GRAY_SPOREBEAN_BAG_3 = registerItem("gray_sporebean_bag_3", new GraySporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item GRAY_SPOREBEAN_BAG_2 = registerItem("gray_sporebean_bag_2", new GraySporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item GRAY_SPOREBEAN_BAG_1 = registerItem("gray_sporebean_bag_1", new GraySporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item GREEN_SPOREBEAN_BAG = registerItem("green_sporebean_bag", new GreenSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item GREEN_SPOREBEAN_BAG_7 = registerItem("green_sporebean_bag_7", new GreenSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item GREEN_SPOREBEAN_BAG_6 = registerItem("green_sporebean_bag_6", new GreenSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item GREEN_SPOREBEAN_BAG_5 = registerItem("green_sporebean_bag_5", new GreenSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item GREEN_SPOREBEAN_BAG_4 = registerItem("green_sporebean_bag_4", new GreenSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item GREEN_SPOREBEAN_BAG_3 = registerItem("green_sporebean_bag_3", new GreenSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item GREEN_SPOREBEAN_BAG_2 = registerItem("green_sporebean_bag_2", new GreenSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item GREEN_SPOREBEAN_BAG_1 = registerItem("green_sporebean_bag_1", new GreenSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item YELLOW_SPOREBEAN_BAG = registerItem("yellow_sporebean_bag", new YellowSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item YELLOW_SPOREBEAN_BAG_7 = registerItem("yellow_sporebean_bag_7", new YellowSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item YELLOW_SPOREBEAN_BAG_6 = registerItem("yellow_sporebean_bag_6", new YellowSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item YELLOW_SPOREBEAN_BAG_5 = registerItem("yellow_sporebean_bag_5", new YellowSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item YELLOW_SPOREBEAN_BAG_4 = registerItem("yellow_sporebean_bag_4", new YellowSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item YELLOW_SPOREBEAN_BAG_3 = registerItem("yellow_sporebean_bag_3", new YellowSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item YELLOW_SPOREBEAN_BAG_2 = registerItem("yellow_sporebean_bag_2", new YellowSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item YELLOW_SPOREBEAN_BAG_1 = registerItem("yellow_sporebean_bag_1", new YellowSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item PURPLE_SPOREBEAN_BAG = registerItem("purple_sporebean_bag", new PurpleSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item PURPLE_SPOREBEAN_BAG_7 = registerItem("purple_sporebean_bag_7", new PurpleSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item PURPLE_SPOREBEAN_BAG_6 = registerItem("purple_sporebean_bag_6", new PurpleSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item PURPLE_SPOREBEAN_BAG_5 = registerItem("purple_sporebean_bag_5", new PurpleSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item PURPLE_SPOREBEAN_BAG_4 = registerItem("purple_sporebean_bag_4", new PurpleSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item PURPLE_SPOREBEAN_BAG_3 = registerItem("purple_sporebean_bag_3", new PurpleSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item PURPLE_SPOREBEAN_BAG_2 = registerItem("purple_sporebean_bag_2", new PurpleSporebeanBagItem(new FabricItemSettings().maxCount(1)));
+    public static final Item PURPLE_SPOREBEAN_BAG_1 = registerItem("purple_sporebean_bag_1", new PurpleSporebeanBagItem(new FabricItemSettings().maxCount(1)));
 
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {

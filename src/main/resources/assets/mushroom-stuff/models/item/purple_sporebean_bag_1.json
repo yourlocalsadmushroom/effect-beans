@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "mushroom-stuff:item/purple_sporebean_bag_1"
+  }
+}
