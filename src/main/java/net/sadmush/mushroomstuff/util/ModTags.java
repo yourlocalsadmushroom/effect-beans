@@ -20,7 +20,7 @@ public class ModTags {
     }
 
     public static class Items {
-        public static final TagKey<Item> SPORE_HARVESTER_HARVEST_PLANTS =
+        public static final TagKey<Item> SPOREBEANS =
                 createTag("sporebeans");
 
         private static TagKey<Item> createTag(String name) {

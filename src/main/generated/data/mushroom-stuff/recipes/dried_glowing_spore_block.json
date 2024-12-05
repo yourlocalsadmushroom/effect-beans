@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "spore",
+  "ingredients": [
+    {
+      "item": "mushroom-stuff:glowing_spore_block"
+    },
+    {
+      "item": "minecraft:clay_ball"
+    }
+  ],
+  "result": {
+    "item": "mushroom-stuff:dried_glowing_spore_block"
+  }
+}

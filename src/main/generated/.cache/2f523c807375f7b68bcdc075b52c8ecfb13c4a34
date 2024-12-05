@@ -1,0 +1,6 @@
+// 1.20.1	2024-12-06T02:47:49.9663281	Mushroom Stuff/Tags for minecraft:block
+77ae01ae41df103cb6354edf4d1987c1e3c64c78 data\minecraft\tags\blocks\mineable\pickaxe.json
+caa65214e42ad067ce1935d9b7d48e0a9feb9e73 data\mushroom-stuff\tags\blocks\spore_harvester_harvest_plants.json
+cc1183a830284ecd19e9ad6bd99154bc79e5d94c data\minecraft\tags\blocks\mineable\hoe.json
+55fbcbc9065cd669bd0792eb4d2a287fc616f23b data\mushroom-stuff\tags\blocks\spore_harvester_harvest_blocks.json
+5e76506ec9178ef2064254896528071c8fc119f7 data\minecraft\tags\blocks\needs_stone_tool.json

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "spore",
+  "ingredients": [
+    {
+      "tag": "mushroom-stuff:sporebeans"
+    },
+    {
+      "item": "minecraft:red_dye"
+    }
+  ],
+  "result": {
+    "item": "mushroom-stuff:red_sporebean"
+  }
+}

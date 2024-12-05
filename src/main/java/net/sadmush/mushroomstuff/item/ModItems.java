@@ -28,17 +28,6 @@ public class ModItems {
     public static final Item PURPLE_SPOREBEAN = registerItem("purple_sporebean", new Item(new FabricItemSettings().food(ModFoodComponents.PURPLE_SPOREBEAN).maxCount(1)));
     public static final Item GRAY_SPOREBEAN = registerItem("gray_sporebean", new Item(new FabricItemSettings().food(ModFoodComponents.GRAY_SPOREBEAN).maxCount(1)));
 
-    public static final Item GOOP_VACUUM = registerItem("goop_vacuum", new GoopVacuumItem(new FabricItemSettings().maxCount(1)));
-    public static final Item GOOP_VACUUM_90 = registerItem("goop_vacuum_90", new GoopVacuumItem(new FabricItemSettings().maxCount(1)));
-    public static final Item GOOP_VACUUM_80 = registerItem("goop_vacuum_80", new GoopVacuumItem(new FabricItemSettings().maxCount(1)));
-    public static final Item GOOP_VACUUM_70 = registerItem("goop_vacuum_70", new GoopVacuumItem(new FabricItemSettings().maxCount(1)));
-    public static final Item GOOP_VACUUM_60 = registerItem("goop_vacuum_60", new GoopVacuumItem(new FabricItemSettings().maxCount(1)));
-    public static final Item GOOP_VACUUM_50 = registerItem("goop_vacuum_50", new GoopVacuumItem(new FabricItemSettings().maxCount(1)));
-    public static final Item GOOP_VACUUM_40 = registerItem("goop_vacuum_40", new GoopVacuumItem(new FabricItemSettings().maxCount(1)));
-    public static final Item GOOP_VACUUM_30 = registerItem("goop_vacuum_30", new GoopVacuumItem(new FabricItemSettings().maxCount(1)));
-    public static final Item GOOP_VACUUM_20 = registerItem("goop_vacuum_20", new GoopVacuumItem(new FabricItemSettings().maxCount(1)));
-    public static final Item GOOP_VACUUM_10 = registerItem("goop_vacuum_10", new GoopVacuumItem(new FabricItemSettings().maxCount(1)));
-
     public static final Item SPORE_HARVESTER = registerItem("spore_harvester", new SporeHarvesterItem(new FabricItemSettings().maxCount(1)));
     public static final Item SPORE_HARVESTER_80 = registerItem("spore_harvester_80", new SporeHarvesterItem(new FabricItemSettings().maxCount(1)));
     public static final Item SPORE_HARVESTER_60 = registerItem("spore_harvester_60", new SporeHarvesterItem(new FabricItemSettings().maxCount(1)));

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "mushroom-stuff:spore"
+    },
+    {
+      "item": "mushroom-stuff:spore"
+    },
+    {
+      "item": "mushroom-stuff:spore"
+    },
+    {
+      "item": "mushroom-stuff:spore"
+    }
+  ],
+  "result": {
+    "item": "mushroom-stuff:goo"
+  }
+}

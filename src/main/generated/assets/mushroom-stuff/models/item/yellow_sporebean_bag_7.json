@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mushroom-stuff:item/yellow_sporebean_bag_7"
+  }
+}

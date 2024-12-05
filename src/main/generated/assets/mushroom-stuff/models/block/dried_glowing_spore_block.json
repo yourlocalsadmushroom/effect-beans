@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "mushroom-stuff:block/dried_glowing_spore_block"
+  }
+}

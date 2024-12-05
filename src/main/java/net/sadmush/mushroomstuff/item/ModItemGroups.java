@@ -27,16 +27,6 @@ public class ModItemGroups {
         entries.add(ModItems.PURPLE_SPOREBEAN);
         entries.add(ModItems.GRAY_SPOREBEAN);
         entries.add(ModItems.ECHO_CLUSTER);
-        entries.add(ModItems.GOOP_VACUUM);
-        entries.add(ModItems.GOOP_VACUUM_90);
-        entries.add(ModItems.GOOP_VACUUM_80);
-        entries.add(ModItems.GOOP_VACUUM_70);
-        entries.add(ModItems.GOOP_VACUUM_60);
-        entries.add(ModItems.GOOP_VACUUM_50);
-        entries.add(ModItems.GOOP_VACUUM_40);
-        entries.add(ModItems.GOOP_VACUUM_30);
-        entries.add(ModItems.GOOP_VACUUM_20);
-        entries.add(ModItems.GOOP_VACUUM_10);
         entries.add(ModItems.SPORE_HARVESTER);
         entries.add(ModItems.SPORE_HARVESTER_80);
         entries.add(ModItems.SPORE_HARVESTER_60);
@@ -103,7 +93,9 @@ public class ModItemGroups {
         entries.add(ModBlocks.GLOWING_SPORE_BLOCK);
         entries.add(ModBlocks.DRIED_SPORE_BLOCK);
         entries.add(ModBlocks.DRIED_GLOWING_SPORE_BLOCK);
-        entries.add(ModBlocks.GOOP);
+        entries.add(ModBlocks.GOO);
+        entries.add(ModBlocks.GOO_BRICKS);
+        entries.add(ModBlocks.LARGE_GOO_BRICKS);
     }).build());
     public static void registerItemGroups() {
         MushroomStuff.LOGGER.info("Registering Item Groups " + MushroomStuff.MOD_ID);

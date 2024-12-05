@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "mushroom-stuff:sporebean",
+    "mushroom-stuff:red_sporebean",
+    "mushroom-stuff:yellow_sporebean",
+    "mushroom-stuff:green_sporebean",
+    "mushroom-stuff:blue_sporebean",
+    "mushroom-stuff:purple_sporebean",
+    "mushroom-stuff:gray_sporebean"
+  ]
+}

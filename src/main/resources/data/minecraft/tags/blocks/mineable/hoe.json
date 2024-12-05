@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "mushroom-stuff:spore_block",
-    "mushroom-stuff:glowing_spore_block",
-    "mushroom-stuff:dried_spore_block",
-    "mushroom-stuff:dried_glowing_spore_block"
-  ]
-}

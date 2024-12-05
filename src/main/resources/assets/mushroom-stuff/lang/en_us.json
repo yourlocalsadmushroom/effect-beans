@@ -11,16 +11,6 @@
   "item.mushroom-stuff.purple_sporebean": "Purple Sporebean",
   "item.mushroom-stuff.gray_sporebean": "Gray Sporebean",
   "item.mushroom-stuff.echo_cluster": "Echo Cluster",
-  "item.mushroom-stuff.goop_vacuum": "Goop Vacuum",
-  "item.mushroom-stuff.goop_vacuum_90": "Goop Vacuum",
-  "item.mushroom-stuff.goop_vacuum_80": "Goop Vacuum",
-  "item.mushroom-stuff.goop_vacuum_70": "Goop Vacuum",
-  "item.mushroom-stuff.goop_vacuum_60": "Goop Vacuum",
-  "item.mushroom-stuff.goop_vacuum_50": "Goop Vacuum",
-  "item.mushroom-stuff.goop_vacuum_40": "Goop Vacuum",
-  "item.mushroom-stuff.goop_vacuum_30": "Goop Vacuum",
-  "item.mushroom-stuff.goop_vacuum_20": "Goop Vacuum",
-  "item.mushroom-stuff.goop_vacuum_10": "Goop Vacuum",
   "item.mushroom-stuff.spore_harvester": "Spore Harvester",
   "item.mushroom-stuff.spore_harvester_80": "Spore Harvester",
   "item.mushroom-stuff.spore_harvester_60": "Spore Harvester",
@@ -88,7 +78,9 @@
   "block.mushroom-stuff.glowing_spore_block": "Glowing Block of Spores",
   "block.mushroom-stuff.dried_spore_block": "Hardened Block of Spores",
   "block.mushroom-stuff.dried_glowing_spore_block": "Hardened Glowing Block of Spores",
-  "block.mushroom-stuff.goop": "Goop",
+  "block.mushroom-stuff.goo": "Goo",
+  "block.mushroom-stuff.goo_bricks": "Goo Bricks",
+  "block.mushroom-stuff.large_goo_bricks": "Large Goo Bricks",
 
   "itemgroup.spore": "Mushroom Stuff"
 }
