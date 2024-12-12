@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "effect-beans:blue_sporebean"
+    },
+    {
+      "item": "effect-beans:blue_sporebean"
+    },
+    {
+      "item": "effect-beans:blue_sporebean"
+    },
+    {
+      "item": "effect-beans:blue_sporebean"
+    },
+    {
+      "item": "effect-beans:blue_sporebean"
+    },
+    {
+      "item": "effect-beans:blue_sporebean"
+    },
+    {
+      "item": "effect-beans:blue_sporebean"
+    },
+    {
+      "item": "minecraft:paper"
+    }
+  ],
+  "result": {
+    "item": "effect-beans:blue_sporebean_bag_7"
+  }
+}

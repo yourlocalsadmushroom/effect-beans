@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "spore",
+  "ingredients": [
+    {
+      "tag": "effect-beans:sporebeans"
+    },
+    {
+      "item": "minecraft:purple_dye"
+    }
+  ],
+  "result": {
+    "item": "effect-beans:purple_sporebean"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "spore",
+  "key": {
+    "#": {
+      "item": "minecraft:glow_berries"
+    },
+    "+": {
+      "item": "minecraft:sugar"
+    }
+  },
+  "pattern": [
+    " + ",
+    "+#+",
+    " + "
+  ],
+  "result": {
+    "item": "effect-beans:sporebean"
+  },
+  "show_notification": true
+}

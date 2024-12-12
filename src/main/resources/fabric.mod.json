@@ -1,9 +1,9 @@
 {
 	"schemaVersion": 1,
-	"id": "mushroom-stuff",
+	"id": "effect-beans",
 	"version": "${version}",
-	"name": "Mushroom Stuff",
-	"description": "Made by ASadMushroom | Mod for funny lil mushrooms",
+	"name": "Effect Beans",
+	"description": "Made by ASadMushroom | Mod for funny beans",
 	"authors": [
 		"ASadMushroom"
 	],
@@ -12,21 +12,21 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "MIT",
-	"icon": "assets/mushroom-stuff/icon.png",
+	"icon": "assets/effect-beans/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.sadmush.mushroomstuff.MushroomStuff"
+			"net.sadmush.effectbeans.Beans"
 		],
 		"client": [
-			"net.sadmush.mushroomstuff.MushroomStuffClient"
+			"net.sadmush.effectbeans.BeansClient"
 		],
 		"fabric-datagen": [
-			"net.sadmush.mushroomstuff.MushroomStuffDataGenerator"
+			"net.sadmush.effectbeans.BeansDataGenerator"
 		]
 	},
 	"mixins": [
-		"mushroom-stuff.mixins.json"
+		"effectbeans.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.9",

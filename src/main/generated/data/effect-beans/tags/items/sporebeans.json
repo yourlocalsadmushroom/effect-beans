@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "effect-beans:sporebean",
+    "effect-beans:red_sporebean",
+    "effect-beans:yellow_sporebean",
+    "effect-beans:green_sporebean",
+    "effect-beans:blue_sporebean",
+    "effect-beans:purple_sporebean",
+    "effect-beans:gray_sporebean",
+    "effect-beans:white_sporebean",
+    "effect-beans:pink_sporebean",
+    "effect-beans:orange_sporebean"
+  ]
+}

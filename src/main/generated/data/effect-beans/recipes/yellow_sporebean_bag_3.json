@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "effect-beans:yellow_sporebean"
+    },
+    {
+      "item": "effect-beans:yellow_sporebean"
+    },
+    {
+      "item": "effect-beans:yellow_sporebean"
+    },
+    {
+      "item": "minecraft:paper"
+    }
+  ],
+  "result": {
+    "item": "effect-beans:yellow_sporebean_bag_3"
+  }
+}
